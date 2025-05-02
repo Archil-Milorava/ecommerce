@@ -1,4 +1,4 @@
-import { getItems } from "@/services/apiItems";
+import { getItems, getSideItems } from "@/services/apiItems";
 import { useQuery } from "@tanstack/react-query";
 
 export const useGetItems = () => {
@@ -10,4 +10,15 @@ export const useGetItems = () => {
   const items = data?.items;
 
   return { items, ...rest };
+};
+
+export const useGetSideItems = () => {
+  const { data, ...rest } = useQuery({
+    queryKey: ["sideItems"],
+    queryFn: getSideItems,
+  });
+
+  const sideItems = data?.items;
+
+  return { sideItems, ...rest };
 };

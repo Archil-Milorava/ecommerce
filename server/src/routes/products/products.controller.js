@@ -28,7 +28,7 @@ export const getItems = async (req, res, next) => {
 export const getSideItems = async (req, res, next) => {
   try {
     const items = await prisma.item.findMany({
-      whrere: {
+      where: {
         price: 42,
       },
     });

@@ -4,14 +4,12 @@ interface MainItemCardProps {
   imageUrl: string | undefined;
   title: string;
   price: number;
-  currency: string;
 }
 
 const MainItemCard: React.FC<MainItemCardProps> = ({
   imageUrl,
   title,
   price,
-  currency,
 }) => {
   return (
     <div className=" w-[25rem] h-[38rem] flex flex-col font-Garamond cursor-pointer">
@@ -32,8 +30,7 @@ const MainItemCard: React.FC<MainItemCardProps> = ({
       <div className=" h-1/12 flex flex-col items-center justify-center ">
         <p className="text-lg text-black  ">{title}</p>
         <p className="text-sm  text-gray-800/60 font-Roboto">
-          {currency}
-          {"  "}
+          €{"  "}
           {price.toFixed(2)}
         </p>
       </div>
