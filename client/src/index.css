@@ -119,3 +119,42 @@
   }
 }
 
+.embla {
+  overflow: hidden;
+}
+.embla__viewport {
+  display: flex;
+}
+
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.animate_text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate_text.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.animate_text.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.animate_text.delay-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

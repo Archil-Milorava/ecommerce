@@ -1,13 +1,25 @@
+import MarqueeIntroText from "@/features/navbar/MarqueeIntroText";
 import Navbar from "../features/navbar/Navbar";
+import SwiperLanding from "@/features/Swiper/SwiperLanding";
 
 const Landing = () => {
   return (
     <div className="h-auto w-full">
-      <div className="text-white bg-[#333333] h-9 w-full flex items-center justify-center text-sm tracking-wide">
-        Free delivery for orders over 50 euros in France. See our specific
-        conditions when you purchase according to your country of order.
+      <MarqueeIntroText />
+      <div className="lg:block hidden">
+        <Navbar />
       </div>
-      <Navbar />
+      {/* <div className="flex items-center pl-11 lg:hidden  h-16 ">
+        <CiMenuBurger
+          onClick={() => setIsBurgerOpen((prev) => !prev)}
+          className="cursor-pointer text-4xl"
+        />
+        {isBurgerOpen && <SidebarNav />}
+      </div> */}
+
+      <div className="w-full h-auto">
+        <SwiperLanding />
+      </div>
     </div>
   );
 };
