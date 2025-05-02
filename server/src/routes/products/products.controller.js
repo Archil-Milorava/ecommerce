@@ -4,7 +4,13 @@ import appError from "../../utils/errorHandler.js";
 
 export const getItems = async (req, res, next) => {
   try {
-    const items = await prisma.item.findMany();
+    const items = await prisma.item.findMany({
+      where: {
+        price: {
+          gt: 42,
+        },
+      },
+    });
 
     if (!items) {
       throw new appError("Not items found", BAD_REQUEST);

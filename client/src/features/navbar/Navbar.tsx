@@ -24,8 +24,9 @@ const menuItemsBeta = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-16 flex ">
-      <div className=" h-full w-5/12">
+    <nav className="w-full h-16 flex font-Garamond">
+      {/* list category */}
+      <div className=" h-full w-5/12 font-Raleway">
         <ul className=" w-full h-full flex items-center pl-11 gap-11">
           {menuItemsBeta.map((item, i) => (
             <li key={i} className="relative group cursor-pointer">
@@ -37,9 +38,11 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+      {/* logo */}
       <div className=" h-full w-2/12 flex items-center justify-center">
         <img src="./logo.svg" alt="logo" className="h-14 cursor-pointer"  />
       </div>
+      {/* icons */}
       <div className=" h-full  w-5/12 flex items-center justify-end gap-4 pr-11 ">
         <PiInstagramLogoThin className="text-2xl cursor-pointer hover:opacity-50 transition-all duration-300" />
         <PiFacebookLogoThin className=" text-2xl cursor-pointer hover:opacity-50 transition-all duration-300" />
