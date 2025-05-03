@@ -16,7 +16,8 @@ import refill from "../assets/refill.webp";
 
 import BeforeFooter from "@/features/footer/BeforeFooter";
 import Footer from "../features/footer/Footer";
-import {  SwiperContainer } from "@/components/Swiper";
+import { SwiperContainer } from "@/components/Swiper";
+import TextReveal from "@/components/TextReveal";
 
 const Landing = () => {
   const { items, isLoading } = useGetItems();
@@ -102,13 +103,17 @@ const Landing = () => {
 
       {/* extra */}
       <div className="h-auto w-full flex flex-col items-center justify-center gap-4 my-11">
-        <p className="font-Roboto text-center">
-          THE EXCEPTIONAL SKINCARE FRAGRANCES BY SABE MASSON
-        </p>
-        <h1 className="max-w-[40rem] text-5xl text-center font-Garamond font-extralight">
-          Whether you glide or spray them on, get back in touch with your skin,
-          listen to yourself.
-        </h1>
+        <TextReveal delay={0}>
+          <p className="font-Roboto text-center">
+            THE EXCEPTIONAL SKINCARE FRAGRANCES BY SABE MASSON
+          </p>
+        </TextReveal>
+        <TextReveal delay={0.5}>
+          <h1 className="max-w-[40rem] text-5xl text-center font-Garamond font-extralight">
+            Whether you glide or spray them on, get back in touch with your
+            skin, listen to yourself.
+          </h1>
+        </TextReveal>
       </div>
       <BeforeFooter />
       {/* girlfoto */}

@@ -6,6 +6,7 @@ const App = () => {
     <div className=" min-h-screen h-auto w-full">
       <ScrollToTop />
       <Landing />
+      
     </div>
   );
 };

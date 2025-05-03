@@ -1,4 +1,4 @@
-import API from "@/config/aciosConfig";
+import API from "@/config/axiosConfig";
 import { getItemsResponse } from "@/types/itemTypes";
 
 export const getItems = (): Promise<getItemsResponse> =>
