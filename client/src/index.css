@@ -4,8 +4,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -141,6 +139,13 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+
+.embla__slide2 {
+  flex: 0 0 auto; /* Let the width be defined by the element's content or utility class */
+  min-width: 0;
+}
+
+
 
 .animate_text {
   opacity: 0;

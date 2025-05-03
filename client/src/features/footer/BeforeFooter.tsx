@@ -4,7 +4,8 @@ import picto3 from "../../assets/picto-made-in-france.svg";
 
 const BeforeFooter = () => {
   return (
-    <div className="bg-[#F9F5EB] h-[215px] w-full flex justify-around">
+    <div className="bg-[#F9F5EB] w-full h-auto py-11 flex flex-col items-center justify-center gap-28 md:h-[215px] md:flex-row">
+
       <div className=" w-[20rem] h-full flex flex-col items-center justify-center gap-3 font-Garamond">
         <img src={picto1} alt="erti" className="h-11" />
         <h1 className="text-2xl">Secure payment</h1>

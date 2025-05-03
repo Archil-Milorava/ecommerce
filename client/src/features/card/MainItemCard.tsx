@@ -12,13 +12,13 @@ const MainItemCard: React.FC<MainItemCardProps> = ({
   price,
 }) => {
   return (
-    <div className=" w-[25rem] h-[38rem] flex flex-col font-Garamond cursor-pointer">
+    <div className="embla__slide2 w-[27rem] h-[38rem]  flex flex-col font-Garamond cursor-pointer ">
       {/* Image Section */}
-      <div className="h-10/12 w-full relative group">
+      <div className=" relative group w-full h-11/12 overflow-hidden">
         <img
           src={imageUrl || placeholder}
           alt={title}
-          className="w-full h-full object-cover"
+          className="h-full w-full object-cover"
         />
         <div className="bg-[#f0efe6]/80 absolute bottom-0 w-full flex items-center justify-center font-Raleway h-11 opacity-0 group-hover:opacity-100 transition-all duration-700">
           <button className="text-sm uppercase font-Roboto tracking-wider text-gray-700/90 cursor-pointer">
@@ -27,11 +27,12 @@ const MainItemCard: React.FC<MainItemCardProps> = ({
         </div>
       </div>
       {/* Details Section */}
-      <div className=" h-1/12 flex flex-col items-center justify-center ">
-        <p className="text-lg text-black  ">{title}</p>
-        <p className="text-sm  text-gray-800/60 font-Roboto">
-          €{"  "}
-          {price.toFixed(2)}
+      <div className="w-full h-1/12 ">
+        <p className="w-full h-1/2 flex items-center justify-center text-black text-lg overflow-hidden">
+          {title}
+        </p>
+        <p className=" w-full h-1/2 flex items-center justify-center text-xs tracking-wider text-gray-600 font-Roboto overflow-hidden">
+          €{price.toFixed(2)}
         </p>
       </div>
     </div>
