@@ -11,13 +11,13 @@ import {
 import Navbar from "../features/navbar/Navbar";
 
 import slider from "../assets/3slider.webp";
-import girlPhoto from "../assets/girl.webp";
 import refill from "../assets/refill.webp";
 
 import BeforeFooter from "@/features/footer/BeforeFooter";
 import Footer from "../features/footer/Footer";
 import { SwiperContainer } from "@/components/Swiper";
 import TextReveal from "@/components/TextReveal";
+import GirlPhoto from "@/components/GirlPhoto";
 
 const Landing = () => {
   const { items, isLoading } = useGetItems();
@@ -117,10 +117,7 @@ const Landing = () => {
       </div>
       <BeforeFooter />
       {/* girlfoto */}
-      <div className="w-full h-auto">
-        <img src={girlPhoto} alt="girl" />
-      </div>
-
+      <GirlPhoto />
       <Footer />
     </div>
   );

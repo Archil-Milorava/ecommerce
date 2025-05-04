@@ -24,9 +24,9 @@ const menuItemsBeta = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-16 flex font-Garamond">
+    <nav className="w-full h-16 flex items-center justify-around font-Garamond">
       {/* list category */}
-      <div className=" h-full w-5/12 font-Raleway">
+      <div className=" h-full w-5/12 font-Raleway hidden lg:block">
         <ul className=" w-full h-full flex items-center pl-11 gap-11">
           {menuItemsBeta.map((item, i) => (
             <li key={i} className="relative group cursor-pointer">
@@ -40,7 +40,7 @@ const Navbar = () => {
       </div>
       {/* logo */}
       <div className=" h-full w-2/12 flex items-center justify-center">
-        <img src="./logo.svg" alt="logo" className="h-14 cursor-pointer"  />
+        <img src="./logo.svg" alt="logo" className="h- cursor-pointer" />
       </div>
       {/* icons */}
       <div className=" h-full  w-5/12 flex items-center justify-end gap-4 pr-11 ">

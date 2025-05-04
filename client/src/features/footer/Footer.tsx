@@ -4,7 +4,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 
 const Footer = () => {
   return (
-    <div className="bg-[#F9F5EB] w-full h-auto flex flex-col items-center justify-center gap-8 py-11">
+    <div className="bg-[#F9F5EB] w-full h-auto flex flex-col items-center justify-center gap-8 py-11 px-4">
       <TextReveal delay={0}>
         <div>
           <img src={footerLogo} alt="logo" />
