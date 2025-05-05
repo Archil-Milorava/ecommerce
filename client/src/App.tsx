@@ -5,6 +5,7 @@ import {
 } from "./components/GoToTop";
 import Landing from "./pages/Landing";
 import SingleItem from "./pages/SingleItem";
+import CartPage from "./pages/CartPage";
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/:itemId" element={<SingleItem />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </>
   );

@@ -64,7 +64,9 @@ const SingleItem = () => {
   return (
     <div className="w-full h-auto font-Garamond">
       <MarqueeIntroText />
-      <Navbar />
+      <div className="sticky top-0 z-50 bg-white lg:block">
+        <Navbar />
+      </div>
       {/* itemWrapper*/}
       <div className="flex flex-col  items-center justify-center p-8   sm:min-h-[50rem]  sm:flex-row sm:items-start sm:justify-center sm:pt-[5rem] sm:gap-4 ">
         {/* image div */}

@@ -7,7 +7,7 @@ type CartItem = {
   unitPrice: number;
   quantity: number;
   totalPrice: number;
-  imageUrl?: string;
+  image?: string;
 };
 
 const initialState: CartItem[] = [];
