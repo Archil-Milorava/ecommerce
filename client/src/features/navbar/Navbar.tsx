@@ -2,8 +2,7 @@ import { getCartQuantity } from "@/state/cart/cartSlice";
 import { CiShoppingCart } from "react-icons/ci";
 import {
   PiFacebookLogoThin,
-  PiInstagramLogoThin,
-  PiUserCircleLight,
+  PiInstagramLogoThin
 } from "react-icons/pi";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -15,7 +14,7 @@ const menuItemsBeta = [
   },
   {
     title: "Contact Us",
-    link: "contact",
+    link: "/contact",
   },
 ];
 
@@ -57,7 +56,6 @@ const Navbar = () => {
         >
           <PiFacebookLogoThin className=" text-2xl cursor-pointer hover:opacity-50 transition-all duration-300" />
         </a>
-        <PiUserCircleLight className="text-2xl cursor-pointer hover:opacity-50 transition-all duration-300" />
         <Link to="/cart" className="relative">
           <CiShoppingCart className="text-2xl cursor-pointer hover:opacity-50 transition-all duration-300" />
           {totalQuantity > 0 && (

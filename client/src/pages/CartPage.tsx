@@ -1,4 +1,6 @@
 import placeholder from "@/assets/placeholder.webp";
+import BeforeFooter from "@/features/footer/BeforeFooter";
+import Footer from "@/features/footer/Footer";
 import MarqueeIntroText from "@/features/navbar/MarqueeIntroText";
 import Navbar from "@/features/navbar/Navbar";
 import {
@@ -92,6 +94,8 @@ const CartPage = () => {
           </div>
         ))}
       </div>
+      <BeforeFooter />
+      <Footer />
     </div>
   );
 };
