@@ -30,7 +30,7 @@ const Landing = () => {
   return (
     <div className=" h-auto w-full">
       <MarqueeIntroText />
-      <div className="sticky top-0 z-50 bg-white hidden lg:block">
+      <div className="sticky top-0 z-50 bg-white lg:block">
         <Navbar />
       </div>
 
@@ -62,6 +62,7 @@ const Landing = () => {
             imageUrl={item.image}
             price={item.price}
             title={item.name}
+            id={item.id}
           />
         ))}
       </SwiperContainer>
@@ -97,6 +98,7 @@ const Landing = () => {
             imageUrl={item.image}
             price={item.price}
             title={item.name}
+            id={item.id}
           />
         ))}
       </SwiperContainer>

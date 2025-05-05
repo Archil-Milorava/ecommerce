@@ -1,14 +1,22 @@
-import ScrollToTop from "./components/ScrollToTop";
+import { Route, Routes } from "react-router-dom";
+import {
+  default as GoToTop,
+  default as ScrollToTop,
+} from "./components/GoToTop";
 import Landing from "./pages/Landing";
 import SingleItem from "./pages/SingleItem";
 
 const App = () => {
+
   return (
-    <div className=" min-h-screen h-auto w-full">
+    <>
       <ScrollToTop />
-      {/* <Landing /> */}
-      <SingleItem />
-    </div>
+      <GoToTop />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/:itemId" element={<SingleItem />} />
+      </Routes>
+    </>
   );
 };
 

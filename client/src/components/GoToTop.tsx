@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
-const ScrollToTop = () => {
+const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -33,4 +33,4 @@ const ScrollToTop = () => {
   );
 };
 
-export default ScrollToTop;
+export default GoToTop;

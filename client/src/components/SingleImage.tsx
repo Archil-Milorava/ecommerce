@@ -1,17 +1,23 @@
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import img1 from "../assets/placeholder.webp";
+import placeholder from "../assets/placeholder.webp";
 
+interface SingleImageProps {
+  imgUrl?: string;
+}
 
-const SingleImage = () => {
+const SingleImage = ({ imgUrl }: SingleImageProps) => {
   return (
-   
-      <div className="max-h-[62rem] max-w-[43rem]">
-        <Zoom>
-          <img src={img1} alt="asd" className="" />
-        </Zoom>
-      
+    <div className="sm:h-[42rem] sm:w-[34rem] overflow-hidden">
+      <Zoom>
+        <img
+          src={imgUrl || placeholder}
+          alt="image"
+          className="h-full w-full object-cover"
+        />
+        {/* asdasd */}
+      </Zoom>
     </div>
   );
 };

@@ -15,9 +15,9 @@ const Footer = () => {
           <p>Built by Archil Milorava</p>
         </TextReveal>
         <TextReveal delay={0.4}>
-          <p>
+          <a href="https://github.com/Archil-Milorava" target="blank">
             <VscGithubAlt />
-          </p>
+          </a>
         </TextReveal>
       </div>
     </div>

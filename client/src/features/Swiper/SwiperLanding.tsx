@@ -1,12 +1,10 @@
-import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { useCallback } from "react";
 import img1 from "../../assets/1slider.webp";
 import img2 from "../../assets/2slider.webp";
 import img3 from "../../assets/3slider.webp";
 
-import { GoArrowLeft } from "react-icons/go";
-import { GoArrowRight } from "react-icons/go";
-import { Button } from "@/components/ui/button";
+import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 const SwiperLanding = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -34,12 +32,12 @@ const SwiperLanding = () => {
               <h1 className="text-5xl font-bold mb-2 animate_text delay-1">
                 TAKE ME AWAY
               </h1>
-              <p className="mb-4 text-sm animate_text delay-2">
+              <p className="mb-4 text-xl animate_text delay-2">
                 a thoughtful, and poetic object
               </p>
-              <button className="bg-[#333333]  px-4 py-2 w-24 animate_text delay-3">
+              {/* <button className="bg-[#333333]  px-4 py-2 w-24 animate_text delay-3">
                 dicover
-              </button>
+              </button> */}
             </div>
           </div>
           {/* second slide */}
@@ -56,12 +54,6 @@ const SwiperLanding = () => {
               <p className="mb-4 text-sm uppercase animate_text delay-2">
                 a thoughtful, and poetic object
               </p>
-              <Button
-                variant="ghost"
-                className="rounded-none border border-white hover:bg-transparent hover:opacity-70 hover:text-white cursor-pointer animate_text delay-3"
-              >
-                Discover
-              </Button>
             </div>
           </div>
           {/* third slide */}
@@ -78,12 +70,6 @@ const SwiperLanding = () => {
               <p className="mb-4 text-sm animate_text delay-2">
                 Discover the essences of our Skincare Fragrance
               </p>
-              <Button
-                variant="ghost"
-                className="rounded-none border border-white hover:bg-transparent hover:opacity-70 hover:text-white cursor-pointer animate_text delay-3"
-              >
-                Discover
-              </Button>
             </div>
           </div>
         </div>
