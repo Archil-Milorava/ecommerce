@@ -3,7 +3,7 @@ import placeholder from "../../assets/placeholder.webp";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, getIsInCart } from "@/state/cart/cartSlice";
 import { RootState } from "@/store/store";
-import { AddToCardButton, UpdateItemQuantity } from "./addToCartButton";
+import { AddToCardButton, UpdateItemQuantity } from "./AddToCartButton";
 
 interface MainItemCardProps {
   imageUrl: string | undefined;
