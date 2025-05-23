@@ -18,6 +18,7 @@ import Footer from "../features/footer/Footer";
 import { SwiperContainer } from "@/components/Swiper";
 import TextReveal from "@/components/TextReveal";
 import GirlPhoto from "@/components/GirlPhoto";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Landing = () => {
   const { items, isLoading } = useGetItems();
@@ -55,6 +56,9 @@ const Landing = () => {
       </div>
 
       {/* items */}
+      <div className="animate-pulse  pl-2 flex">
+        <MdKeyboardDoubleArrowRight size={50} />
+      </div>
       <SwiperContainer>
         {items?.map((item) => (
           <MainItemCard
@@ -91,6 +95,9 @@ const Landing = () => {
       </div>
 
       {/* sideitems */}
+      <div className="animate-pulse  pl-2 flex">
+        <MdKeyboardDoubleArrowRight size={50} />
+      </div>
       <SwiperContainer>
         {sideItems?.map((item) => (
           <MainItemCard

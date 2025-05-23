@@ -69,7 +69,7 @@ const CartPage = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-sm bg-red-300 w-[20rem] h-[1.5rem] overflow-hidden">
+              <p className="text-lg w-[20rem] h-[1.5rem] overflow-hidden">
                 {item.title}
               </p>
               <p className="font-Roboto text-xs font-light">
