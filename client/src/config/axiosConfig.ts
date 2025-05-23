@@ -4,7 +4,7 @@ const options = {
   baseURL:
     import.meta.env.VITE_NODE_ENV === "development"
       ? import.meta.env.VITE_BASE_URL
-      : "https://ecommerce-ig4w.onrender.com",
+      : "https://ecommerce-ig4w.onrender.com/",
   withCredentials: true,
 };
 
